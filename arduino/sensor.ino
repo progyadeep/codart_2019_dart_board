@@ -19,24 +19,24 @@ void loop() {
   if((v=digitalRead(chart[0][0])) != chart[0][2])
   {
     chart[0][2] = v;
-    Serial.println(1);
+    Serial.write(1);
     i=0;
    }
    else if((digitalRead(chart[1][0])) != chart[1][2]){
      chart[1][2] = v;
-     Serial.println(2);
+     Serial.write(2);
      i=1;
    }
    else if((digitalRead(chart[2][0])) != chart[2][2]){
      chart[2][2] = v;
-     Serial.println(3);
+     Serial.write(3);
      i=2;
    }
 
    if(i != -1){
     digitalWrite(chart[i][1],HIGH);
-    delay(200);
+    delay(100);
     digitalWrite(chart[i][1],LOW);
-    delay(200);
+    delay(100);
    }
 }
