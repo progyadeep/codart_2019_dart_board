@@ -1,13 +1,14 @@
-int chart[][3] = {{7,13,0},{6,12,0},{5,11,0}};
+int chart[][3] = {{7,12,0},{6,11,0},{5,10,0}};
 
 void setup() {
-  pinMode(chart[0][0],INPUT);
-  pinMode(chart[1][0],INPUT);
-  pinMode(chart[2][0],INPUT);
+  int i;
+  for(i=0; i<=2; i++)
+    pinMode(chart[i][0], INPUT);
+
+  for(i=0; i<=2; i++)
+    pinMode(chart[i][1], OUTPUT);
   
-  pinMode(chart[0][1],OUTPUT);
-  pinMode(chart[1][1],OUTPUT);
-  pinMode(chart[2][1],OUTPUT);
+  pinMode(13, OUTPUT);
 }
 
 void loop() {
