@@ -20,5 +20,5 @@ while True:
 		if l == 1:
 			l = 0
 		else:
-			print(str(requests.post("http://127.0.0.1/codart", data={val:str(x-1).content[2:].replace("'", ""), team:teams[t-1]})
+			print(str(requests.post("http://127.0.0.1/codart", data={val:str(x-1).content[2:].replace("'", ""), team:teams[t-1]})))
 			l = x
