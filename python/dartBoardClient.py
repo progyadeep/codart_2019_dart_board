@@ -24,6 +24,5 @@ while True:
 		print("OK ("+str(x)+")")
 		t = int(input("TEAM: ").strip())
 		print(str(requests.post("http://127.0.0.1/", data={'dart':x, 'team':teams[t-1], 'token':'A70811DBX'}).text))
-		#print(x)
 		l = x
 		print("\nHIT: ", end='')
