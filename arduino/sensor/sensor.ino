@@ -15,11 +15,11 @@ void loop() {
     chart[0][2] = v;
     i=0;
    }
-   else if((digitalRead(chart[1][0])) != chart[1][2]){
+   else if((v=digitalRead(chart[1][0])) != chart[1][2]){
      chart[1][2] = v;
      i=1;
    }
-   else if((digitalRead(chart[2][0])) != chart[2][2]){
+   else if((v=digitalRead(chart[2][0])) != chart[2][2]){
      chart[2][2] = v;
      i=2;
    }
